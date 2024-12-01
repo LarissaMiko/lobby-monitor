@@ -17,7 +17,7 @@ const MVVMonitor: React.FC = () => {
         className="mt-8 px-6 py-3 text-2xl border-2 border-black bg-transparent rounded-lg hover:bg-black hover:text-white transition duration-300"
         onClick={() => window.history.back()}
       >
-        Zurück
+        Zurück 
       </button>
     </div>
   );
