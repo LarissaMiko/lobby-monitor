@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MVV Abfahrtsmonitor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            max-width: 800px;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>MVV Abfahrtsmonitor</h1>
+        <div class="mvv-departure-monitor"
+             monitor-configuration="eyJsYW5ndWFnZSI6eyJkZXBhcnR1cmUiOiJBYmZhaHJ0IiwidHJhaW5TdG9wcyI6IkhhbHRlc3RlbGxlbiIsImRpcmVjdGlvbiI6IlJpY2h0dW5nIiwiZm9vdGVyTm90ZSI6IqkgQ29weXJpZ2h0IiwiZm9vdGVyVGV4dCI6IldlaXRlcmUgRmFocnBsYW5hdXNr/G5mdGUgdW50ZXIgd3d3Lm12di1hdXNrdW5mdC5kZSBvZGVyIG1pdCBkZXIgTVZWLUFwcCIsImhlYWRlclRleHQiOiJBYmZhaHJ0ZW4gZvxyIGhldXRlLCAiLCJsYW5ndWFnZSI6ImRlIiwibGluZSI6IkxpbmllIiwibGl2ZSI6IkxpdmUiLCJzdG9wIjoiSGFsdGVzdGVsbGUiLCJ0cmFjayI6IkdsZWlzIn0sImlzRnVsbHNjcmVlbiI6ZmFsc2UsInN0YXRpb25zIjpbeyJzdGF0aW9uIjp7InVzYWdlIjoic2YiLCJ0eXBlIjoiYW55IiwibmFtZSI6Ik38bmNoZW4sIEFpZGVuYmFjaHN0cmHfZSIsInN0YXRlbGVzcyI6IjkxMDAxNDYwIiwiYW55VHlwZSI6InN0b3AiLCJzb3J0IjoiMiIsInF1YWxpdHkiOiI1NjkiLCJiZXN0IjoiMSIsIm9iamVjdCI6IkFpZGVuYmFjaHN0cmHfZSIsIm1haW5Mb2MiOiJN/G5jaGVuIiwibW9kZXMiOiIyLDUiLCJyZWYiOnsiaWQiOiI5MTAwMTQ2MCIsImdpZCI6ImRlOjA5MTYyOjE0NjAiLCJvbWMiOiI5MTYyMDAwIiwicGxhY2VJRCI6IjEiLCJwbGFjZSI6Ik38bmNoZW4iLCJjb29yZHMiOiIxMjgyODc0LjAwMDAwLDU4NzY4MzIuMDAwMDAifSwiaWQiOiJkZTowOTE2MjoxNDYwIn0sImxpbmVzIjpbeyJudW1iZXIiOiJVMyIsInN5bWJvbCI6IjAxMFUzLnN2ZyIsImRpcmVjdGlvbiI6Ikb8cnN0ZW5yaWVkIFdlc3QiLCJzdGF0ZWxlc3MiOiJzd206MDEwVTM6RzpIOjAxNCIsIm5hbWUiOiJVLUJhaG4ifSx7Im51bWJlciI6IlUzIiwic3ltYm9sIjoiMDEwVTMuc3ZnIiwiZGlyZWN0aW9uIjoiTW9vc2FjaCIsInN0YXRlbGVzcyI6InN3bTowMTBVMzpHOlI6MDE0IiwibmFtZSI6IlUtQmFobiJ9LHsibnVtYmVyIjoiNTEiLCJzeW1ib2wiOiIyNDA1MS5zdmciLCJkaXJlY3Rpb24iOiJNb29zYWNoIiwic3RhdGVsZXNzIjoic3dtOjAzMDUxOkc6UjowMTQiLCJuYW1lIjoiTWV0cm9CdXMifSx7Im51bWJlciI6IjUzIiwic3ltYm9sIjoiMjQwNTMuc3ZnIiwiZGlyZWN0aW9uIjoiTfxuY2huZXIgRnJlaWhlaXQgVSB2aWEgUm90a3JldXpwbGF0eiBVIiwic3RhdGVsZXNzIjoic3dtOjAzMDUzOkc6UjowMTQiLCJuYW1lIjoiTWV0cm9CdXMifSx7Im51bWJlciI6IjYzIiwic3ltYm9sIjoiMjQwNjMuc3ZnIiwiZGlyZWN0aW9uIjoiRm9yc3RlbnJpZWRlciBBbGxlZSBVIiwic3RhdGVsZXNzIjoic3dtOjAzMDYzOkc6SDowMTQiLCJuYW1lIjoiTWV0cm9CdXMifSx7Im51bWJlciI6IjYzIiwic3ltYm9sIjoiMjQwNjMuc3ZnIiwiZGlyZWN0aW9uIjoiUm90a3JldXpwbGF0eiBVIiwic3RhdGVsZXNzIjoic3dtOjAzMDYzOkc6UjowMTQiLCJuYW1lIjoiTWV0cm9CdXMifSx7Im51bWJlciI6IjEzNiIsInN5bWJvbCI6IjAzMTM2LnN2ZyIsImRpcmVjdGlvbiI6IlNvbGxuIEJmLiBXZW5kZXNjaGxlaWZlIiwic3RhdGVsZXNzIjoic3dtOjAzMTM2Okc6SDowMTQiLCJuYW1lIjoiQnVzIn0seyJudW1iZXIiOiIxMzYiLCJzeW1ib2wiOiIwMzEzNi5zdmciLCJkaXJlY3Rpb24iOiJXb2xmcmF0c2hhdXNlciBTdHJh32UiLCJzdGF0ZWxlc3MiOiJzd206MDMxMzY6RzpSOjAxNCIsIm5hbWUiOiJCdXMifSx7Im51bWJlciI6Ik40MSIsInN5bWJvbCI6IjMzTjQxLnN2ZyIsImRpcmVjdGlvbiI6Ikb8cnN0ZW5yaWVkIFdlc3QiLCJzdGF0ZWxlc3MiOiJzd206MzNONDE6RzpIOjAxNCIsIm5hbWUiOiJOYWNodEJ1cyJ9LHsibnVtYmVyIjoiTjQxIiwic3ltYm9sIjoiMzNONDEuc3ZnIiwiZGlyZWN0aW9uIjoiRmVsZG1vY2hpbmciLCJzdGF0ZWxlc3MiOiJzd206MzNONDE6RzpSOjAxNCIsIm5hbWUiOiJOYWNodEJ1cyJ9XSwibGVhZFRpbWVNaW51dGVzIjoxMH1dLCJsaW5lcyI6W10sIm1heFJlc3VsdHMiOjEwLCJmZXRjaEludGVydmFsSW5NaW51dGVzIjoyLCJzaG93Tm90aWZpY2F0aW9uIjp0cnVlfQ=="></div>
+    </div>
+    <script type="text/javascript" src="https://www.mvv-muenchen.de/typo3conf/ext/sn_mvv_efa/Resources/Public/mvv-monitor/mvv-monitor.min.js"></script>
+</body>
+</html>
